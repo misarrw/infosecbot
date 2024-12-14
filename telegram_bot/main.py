@@ -61,4 +61,4 @@ if __name__ == '__main__':
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        print('Black out') # убирает ошибку KeyboardInterrupt в терминале
+        print('Black out') # убирает ошибку KeyboardInterrupt в терминале 

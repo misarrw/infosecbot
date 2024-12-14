@@ -304,6 +304,7 @@ async def contacts_cmd(message: Message) -> None:
 async def contact1(callback: CallbackQuery):
     await callback.message.answer('Иванов Федор Ильич\nТелефон: +7 (985) 471-86-23; 15194\n Почта: fivanov@hse.ru')
 
+
 @router.callback_query(F.data == 'Павлова')
 async def contact2(callback: CallbackQuery):
     await callback.message.answer('Павлова Татьяна Александровна\nТелефон: +7 (495) 772-95-90; 11093\n '
@@ -317,6 +318,7 @@ async def contact3(callback: CallbackQuery):
 @router.callback_query(F.data == 'Справочная')
 async def contact4(callback: CallbackQuery):
     await callback.message.answer('справочная\nТелефон: +7 (495) 771-32-32')
+
 
 @router.callback_query(F.data == 'П/р')
 async def contact5(callback: CallbackQuery):

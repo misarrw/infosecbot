@@ -322,6 +322,7 @@ async def contact4(callback: CallbackQuery):
 async def contact5(callback: CallbackQuery):
     await callback.message.answer('для соединения с подразделением/работником\nТелефон: +7 (495) 531-00-00')
 
+
 @router.callback_query(F.data == 'Прием.комиссия')
 async def contact6(callback: CallbackQuery):
     await callback.message.answer('приемная комиссия\nТелефон: (495) 771-32-42; (495) 916-88-44')

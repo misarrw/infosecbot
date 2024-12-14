@@ -58,6 +58,7 @@ async def edit_data(message: Message) -> None:
     await message.answer('Настройки для старост',
                          reply_markup=kb.master_settings)
 
+
 ### Редактирвоание данных
 @advanced_router.message(F.text == 'Назначить/редактировать дедлайн')
 async def add_deadlines(message: Message, state: FSMContext) -> None:

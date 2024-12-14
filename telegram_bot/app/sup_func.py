@@ -13,6 +13,7 @@ def check_date(day) -> bool:
     deadline_date = datetime.datetime.strptime(day, "%d.%m.%Y %H:%M")
     return deadline_date > current_date
 
+
 def convert_into_group_number(text) -> bool:
     """Конвертирует вводимые пользователем данные в интовое значение номера группы и проверяет существования номера группы
     

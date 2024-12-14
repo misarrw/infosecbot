@@ -52,12 +52,12 @@ class BotTest(unittest.TestCase):
 
     def test_check_format_scheduler_positive(self):
         timetable = '1.Аип 2.Алгем\nЗанятий нет\nЗанятий нет\nЗанятий нет\nЗанятий нет\nЗанятий нет'
-        self.assertTrue(sf.check_format_scheduler(timetable))
+        self.assertTrue(sf.check_format_timetable(timetable))
 
     def test_check_format_scheduler_negative(self):
         timetable = 'Аип 2.Алгем\nЗанятий нет\nЗанятий нет\nЗанятий нет\nЗанятий нет\nЗанятий нет'
         with pytest.raises(ValueError):
-            self.assertRaises(sf.check_format_scheduler(timetable))
+            self.assertRaises(sf.check_format_timetable(timetable))
 
     
 ### тест для проверки на длину строки в write_student_name
@@ -82,12 +82,18 @@ async def test_write_student_name_positive():
     message.text = 'Закончить'
     state = AsyncMock()
     message.from_user.id = 542241668
+    state.clear = AsyncMock()
 
+    with patch("app.keyboards.main", new_callable=AsyncMock) as mock_kb_main:
+        mock_kb_main.return_value = "MockedKeyboard"
+
+        await ah.write_student_name(message, state)
+
+        await message.answer.called_with('Что надо?',
+                                reply_markup=await kb.main(message.from_user.id))
+        state.clear.assert_called_with()
     
-    await ah.write_student_name(message, state)
 
-    await message.answer.called_with('Что надо?',
-                             reply_markup=kb.main)
 
 
 import pytest
@@ -100,12 +106,16 @@ async def test_reg_name_negative():
     message.text = 'fjfjff' * 30
     state = AsyncMock()
     message.from_user.id = 542241668
+    
 
     with patch("app.database.requests.set_user", new_callable=AsyncMock) as mock_set_user, \
-         patch("app.keyboards.main", new_callable=AsyncMock) as mock_kb_main:
+         patch("app.keyboards.main", new_callable=AsyncMock) as mock_kb_main, \
+            patch('app.database.requests.get_group') as mock_get_group:
 
         mock_set_user.side_effect = DataError("Error", None, None)
         mock_kb_main.return_value = "MockedKeyboard"
+        mock_get_group.return_value = 242
+
 
         await h.reg_name(message, state)
 
@@ -165,7 +175,7 @@ async def test_add_subject_positive():
 
         await ah.add_subject(message, state)
         mock_add_subject.assert_awaited_once_with(message.text)
-        state.set_state.assert_awaited_with(Subjects.subject)
+        state.set_state.assert_called_with(Subjects.subject)
 
 
 

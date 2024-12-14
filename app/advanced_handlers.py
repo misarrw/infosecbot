@@ -113,6 +113,7 @@ async def write_student_name(message: Message, state: State) -> None:
                 await state.set_state(Students.student)
         except DataError:
             await message.answer('Имя слишком длинное.\nМаксимальная длина вводимых данных: 40 символов')
+            await state.set_state(Students.student)
 
 
 ### пропуски
@@ -265,6 +266,8 @@ async def add_subject(message: Message, state: FSMContext) -> None:
             await state.set_state(Absent.name_subject)
         elif not await rq.add_subject(message.text):
             await message.answer('Такой предмет уже записан.')
+            await state.set_state(Subjects.subject)
+        else:
             await state.set_state(Subjects.subject)
     except DataError:
         await message.answer('Предмет слишком длинный.\nДопустимая длина вводимых данных: 120 символов')

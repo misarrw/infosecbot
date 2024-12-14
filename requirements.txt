@@ -1,0 +1,7 @@
+aiogram
+asyncio
+pytest
+pytest-asyncio
+pydoctor
+sqlalchemy
+aiomysql

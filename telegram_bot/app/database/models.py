@@ -49,7 +49,6 @@ class Password(Base):
     password: Mapped[str] = mapped_column(String(50))
 
 
-
 class Schedule(Base):
     """Класс создания таблицы с расписанием"""
     __tablename__ = 'schedules'

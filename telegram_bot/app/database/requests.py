@@ -240,7 +240,7 @@ async def get_user_skips(tg_id: int) -> list:
     """
     async with async_session() as session:
         user_name = await get_username(tg_id)
-        skips = await session.scalars(select(Absent).where(Absent.username == user_name))
+        skips = await session.scalars(select(Absent).where(Absent.username==user_name))
         skips_list = []
         for skip in skips:
             skips_list.append(f'{skip.subject}: {str(skip.cnt_gap)}\n')
@@ -261,8 +261,7 @@ async def set_absent(username: str, group: int, subject: str, number: int) -> No
     :rtype: None
     """
     async with async_session() as session:
-        if await session.scalar(select(Absent).where(Absent.subject == subject).where(Absent.username
-                                                                                              == username)):
+        if await session.scalar(select(Absent).where(Absent.subject==subject).where(Absent.username == username)):
             str_absent = await session.scalars(select(Absent).where(Absent.subject == subject)
                                                .where(Absent.username == username))
             if number == 1:
@@ -298,8 +297,8 @@ async def set_deadline(name_deadline: str, group: int, day: str, month: str, yea
     :rtype: None
     """
     async with async_session() as session:
-        session.add(Deadline(name_deadline=name_deadline, group=group, day=day, month = month, year = year, hour = hour,
-                             minute = minute))
+        session.add(Deadline(name_deadline=name_deadline, group=group, day=day, month=month, year=year, hour=hour,
+                             minute=minute))
         await session.commit()
 
 

@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>advanced_handlers</title>
+    <meta name="generator" content="pydoctor 24.11.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          advanced_handlers <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="index.html" class="internal-link" title="This module">advanced<wbr></wbr>_handlers</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="advanced_handlers.Absent.html" class="internal-link" title="advanced_handlers.Absent"><wbr></wbr>Absent</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="advanced_handlers.Students.html" class="internal-link" title="advanced_handlers.Students"><wbr></wbr>Students</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="advanced_handlers.Subjects.html" class="internal-link" title="advanced_handlers.Subjects"><wbr></wbr>Subjects</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="advanced_handlers.Timetable.html" class="internal-link" title="advanced_handlers.Timetable"><wbr></wbr>Timetable</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_deadlines" class="internal-link" title="advanced_handlers.add_deadlines">add<wbr></wbr>_deadlines</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_subject" class="internal-link" title="advanced_handlers.add_subject">add<wbr></wbr>_subject</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#edit_data" class="internal-link" title="advanced_handlers.edit_data">edit<wbr></wbr>_data</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#edit_group_list" class="internal-link" title="advanced_handlers.edit_group_list">edit<wbr></wbr>_group<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#edit_timetable" class="internal-link" title="advanced_handlers.edit_timetable">edit<wbr></wbr>_timetable</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#mark_absent" class="internal-link" title="advanced_handlers.mark_absent">mark<wbr></wbr>_absent</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pick_subject" class="internal-link" title="advanced_handlers.pick_subject">pick<wbr></wbr>_subject</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pick_subject2" class="internal-link" title="advanced_handlers.pick_subject2">pick<wbr></wbr>_subject2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pick_subject_skip" class="internal-link" title="advanced_handlers.pick_subject_skip">pick<wbr></wbr>_subject<wbr></wbr>_skip</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#print_table_skips" class="internal-link" title="advanced_handlers.print_table_skips">print<wbr></wbr>_table<wbr></wbr>_skips</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_dynamic_gap1" class="internal-link" title="advanced_handlers.set_dynamic_gap1">set<wbr></wbr>_dynamic<wbr></wbr>_gap1</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_dynamic_gap2" class="internal-link" title="advanced_handlers.set_dynamic_gap2">set<wbr></wbr>_dynamic<wbr></wbr>_gap2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_gap_number" class="internal-link" title="advanced_handlers.set_gap_number">set<wbr></wbr>_gap<wbr></wbr>_number</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_timetable" class="internal-link" title="advanced_handlers.set_timetable">set<wbr></wbr>_timetable</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#student_selection" class="internal-link" title="advanced_handlers.student_selection">student<wbr></wbr>_selection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#write_student_name" class="internal-link" title="advanced_handlers.write_student_name">write<wbr></wbr>_student<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#advanced_router" class="internal-link" title="advanced_handlers.advanced_router">advanced<wbr></wbr>_router</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">advanced_handlers</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1">
+  
+  
+  <tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="advanced_handlers.Absent.html" class="internal-link" title="advanced_handlers.Absent"><wbr></wbr>Absent</a></code></td>
+    <td>Класс состояния</td>
+  </tr><tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="advanced_handlers.Students.html" class="internal-link" title="advanced_handlers.Students"><wbr></wbr>Students</a></code></td>
+    <td>Класс состояния</td>
+  </tr><tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="advanced_handlers.Subjects.html" class="internal-link" title="advanced_handlers.Subjects"><wbr></wbr>Subjects</a></code></td>
+    <td>Класс состояния</td>
+  </tr><tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="advanced_handlers.Timetable.html" class="internal-link" title="advanced_handlers.Timetable"><wbr></wbr>Timetable</a></code></td>
+    <td>Класс состояния</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#add_deadlines" class="internal-link" title="advanced_handlers.add_deadlines">add<wbr></wbr>_deadlines</a></code></td>
+    <td>Обновление состояния</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#add_subject" class="internal-link" title="advanced_handlers.add_subject">add<wbr></wbr>_subject</a></code></td>
+    <td>Функция добавления предмета в базу данных</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#edit_data" class="internal-link" title="advanced_handlers.edit_data">edit<wbr></wbr>_data</a></code></td>
+    <td>Вывод клавиатуры с настройками для старосты</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#edit_group_list" class="internal-link" title="advanced_handlers.edit_group_list">edit<wbr></wbr>_group<wbr></wbr>_list</a></code></td>
+    <td>Промежуточна функция к добавлению студентов в список</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#edit_timetable" class="internal-link" title="advanced_handlers.edit_timetable">edit<wbr></wbr>_timetable</a></code></td>
+    <td>Промежуточная функция к добавлению расписания</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#mark_absent" class="internal-link" title="advanced_handlers.mark_absent">mark<wbr></wbr>_absent</a></code></td>
+    <td>Промежуточная функция к добавлению пропусков атоматическим способом</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#pick_subject" class="internal-link" title="advanced_handlers.pick_subject">pick<wbr></wbr>_subject</a></code></td>
+    <td>Промежуточная функция к отметке отсутствующих</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#pick_subject2" class="internal-link" title="advanced_handlers.pick_subject2">pick<wbr></wbr>_subject2</a></code></td>
+    <td>Функция добавления предметов в базу данных или выбор способа добавления пропусков</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#pick_subject_skip" class="internal-link" title="advanced_handlers.pick_subject_skip">pick<wbr></wbr>_subject<wbr></wbr>_skip</a></code></td>
+    <td>Выбор предмета для отметки пропуска</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#print_table_skips" class="internal-link" title="advanced_handlers.print_table_skips">print<wbr></wbr>_table<wbr></wbr>_skips</a></code></td>
+    <td>Вывод пропуска студентов</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#set_dynamic_gap1" class="internal-link" title="advanced_handlers.set_dynamic_gap1">set<wbr></wbr>_dynamic<wbr></wbr>_gap1</a></code></td>
+    <td>Выбор студента для отметки отсутствия в базу данных ручным способом</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#set_dynamic_gap2" class="internal-link" title="advanced_handlers.set_dynamic_gap2">set<wbr></wbr>_dynamic<wbr></wbr>_gap2</a></code></td>
+    <td>Функция добавления пропусков студентов в базу данных автоматическим способом</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#set_gap_number" class="internal-link" title="advanced_handlers.set_gap_number">set<wbr></wbr>_gap<wbr></wbr>_number</a></code></td>
+    <td>Промежуточная функция к добавлению пропусков ручным способом</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#set_timetable" class="internal-link" title="advanced_handlers.set_timetable">set<wbr></wbr>_timetable</a></code></td>
+    <td>Добавление расписания в базу данных</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#student_selection" class="internal-link" title="advanced_handlers.student_selection">student<wbr></wbr>_selection</a></code></td>
+    <td>Функция добавления пропусков студентов в базу данных автоматическим способом</td>
+  </tr><tr class="function">
+    
+    <td>Async Function</td>
+    <td><code><a href="#write_student_name" class="internal-link" title="advanced_handlers.write_student_name">write<wbr></wbr>_student<wbr></wbr>_name</a></code></td>
+    <td>Функция добавления студента в общий список группы</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#advanced_router" class="internal-link" title="advanced_handlers.advanced_router">advanced<wbr></wbr>_router</a></code></td>
+    <td>Роутер для функций, доступных только старостам</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="advanced_handlers.add_deadlines">
+    
+  </a>
+  <a name="add_deadlines">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr>(F.text == 'Назначить/редактировать дедлайн'))<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">add_deadlines</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#add_deadlines" title="advanced_handlers.add_deadlines">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Обновление состояния</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управление состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.add_subject">
+    
+  </a>
+  <a name="add_subject">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr><a href="advanced_handlers.Subjects.html#subject" class="internal-link" title="advanced_handlers.Subjects.subject">Subjects.subject</a>)<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">add_subject</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#add_subject" title="advanced_handlers.add_subject">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция добавления предмета в базу данных</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управления состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.edit_data">
+    
+  </a>
+  <a name="edit_data">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr>(F.text == 'Редактирование данных'))<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">edit_data</span><span class="function-signature">(message: <code>Message</code>)</span>:
+    
+    <a class="headerLink" href="#edit_data" title="advanced_handlers.edit_data">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Вывод клавиатуры с настройками для старосты</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.edit_group_list">
+    
+  </a>
+  <a name="edit_group_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr>(F.text == 'Изменить список группы'))<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">edit_group_list</span><span class="function-signature">(message: <code>Message</code>, state: <code>State</code>)</span>:
+    
+    <a class="headerLink" href="#edit_group_list" title="advanced_handlers.edit_group_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Промежуточна функция к добавлению студентов в список</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>State</code></td><td class="fieldArgDesc">Управление состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.edit_timetable">
+    
+  </a>
+  <a name="edit_timetable">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr>(F.text == 'Редактировать расписание'))<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">edit_timetable</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#edit_timetable" title="advanced_handlers.edit_timetable">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Промежуточная функция к добавлению расписания</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управления сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управления состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.mark_absent">
+    
+  </a>
+  <a name="mark_absent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr>(F.text == 'Автоматически отметить 1 пропуск'))<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">mark_absent</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#mark_absent" title="advanced_handlers.mark_absent">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Промежуточная функция к добавлению пропусков атоматическим способом</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управление состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.pick_subject">
+    
+  </a>
+  <a name="pick_subject">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr>(F.text == 'Отметить пропуски'))<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">pick_subject</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#pick_subject" title="advanced_handlers.pick_subject">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Промежуточная функция к отметке отсутствующих</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управление состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.pick_subject2">
+    
+  </a>
+  <a name="pick_subject2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr><a href="advanced_handlers.Absent.html#name_subject" class="internal-link" title="advanced_handlers.Absent.name_subject">Absent.name_subject</a>)<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">pick_subject2</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#pick_subject2" title="advanced_handlers.pick_subject2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция добавления предметов в базу данных или выбор способа добавления пропусков</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управления состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.pick_subject_skip">
+    
+  </a>
+  <a name="pick_subject_skip">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr>(F.text == 'Посмотреть пропуски студентов'))<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">pick_subject_skip</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#pick_subject_skip" title="advanced_handlers.pick_subject_skip">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Выбор предмета для отметки пропуска</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управление</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.print_table_skips">
+    
+  </a>
+  <a name="print_table_skips">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr><a href="advanced_handlers.Subjects.html#subject_skip" class="internal-link" title="advanced_handlers.Subjects.subject_skip">Subjects.subject_skip</a>)<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">print_table_skips</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#print_table_skips" title="advanced_handlers.print_table_skips">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Вывод пропуска студентов</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управление</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.set_dynamic_gap1">
+    
+  </a>
+  <a name="set_dynamic_gap1">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr><a href="advanced_handlers.Absent.html#gap_number" class="internal-link" title="advanced_handlers.Absent.gap_number">Absent.gap_number</a>)<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">set_dynamic_gap1</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#set_dynamic_gap1" title="advanced_handlers.set_dynamic_gap1">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Выбор студента для отметки отсутствия в базу данных ручным способом</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управление состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.set_dynamic_gap2">
+    
+  </a>
+  <a name="set_dynamic_gap2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr><a href="advanced_handlers.Absent.html#dynamic_gap" class="internal-link" title="advanced_handlers.Absent.dynamic_gap">Absent.dynamic_gap</a>)<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">set_dynamic_gap2</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#set_dynamic_gap2" title="advanced_handlers.set_dynamic_gap2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция добавления пропусков студентов в базу данных автоматическим способом</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управление состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.set_gap_number">
+    
+  </a>
+  <a name="set_gap_number">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr>(F.text == 'Вписать количество пропущенных занятий вручную'))<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">set_gap_number</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#set_gap_number" title="advanced_handlers.set_gap_number">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Промежуточная функция к добавлению пропусков ручным способом</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управление состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.set_timetable">
+    
+  </a>
+  <a name="set_timetable">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr><a href="advanced_handlers.Timetable.html#days" class="internal-link" title="advanced_handlers.Timetable.days">Timetable.days</a>)<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">set_timetable</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#set_timetable" title="advanced_handlers.set_timetable">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Добавление расписания в базу данных</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управления сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управления состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.student_selection">
+    
+  </a>
+  <a name="student_selection">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr><a href="advanced_handlers.Absent.html#username" class="internal-link" title="advanced_handlers.Absent.username">Absent.username</a>)<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">student_selection</span><span class="function-signature">(message: <code>Message</code>, state: <code>FSMContext</code>)</span>:
+    
+    <a class="headerLink" href="#student_selection" title="advanced_handlers.student_selection">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция добавления пропусков студентов в базу данных автоматическим способом</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>FSMContext</code></td><td class="fieldArgDesc">Управление состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="advanced_handlers.write_student_name">
+    
+  </a>
+  <a name="write_student_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @advanced_router.message(<wbr></wbr><a href="advanced_handlers.Students.html#student" class="internal-link" title="advanced_handlers.Students.student">Students.student</a>)<br />
+    <span class="py-keyword">async def</span> <span class="py-defname">write_student_name</span><span class="function-signature">(message: <code>Message</code>, state: <code>State</code>)</span>:
+    
+    <a class="headerLink" href="#write_student_name" title="advanced_handlers.write_student_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция добавления студента в общий список группы</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>Message</code></td><td class="fieldArgDesc">Управление сообщениями</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">state:</span><code>State</code></td><td class="fieldArgDesc">Управление состояниями</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="advanced_handlers.advanced_router">
+    
+  </a>
+  <a name="advanced_router">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">advanced_router</span> =
+    
+    <a class="headerLink" href="#advanced_router" title="advanced_handlers.advanced_router">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Роутер для функций, доступных только старостам</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for advanced_handlers,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.0 at 2024-12-14 03:28:37.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
